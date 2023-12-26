@@ -18,7 +18,11 @@ export const Navbar = () => {
 						Contact
 					</NavLink>
 				</li>
-				<li>Service</li>
+				<li>
+					<Link to="/service" state={{ name: 'service', age: 34 }}>
+						Service
+					</Link>
+				</li>
 
 				{/* inline method to handle active links */}
 				<li>
@@ -34,6 +38,9 @@ export const Navbar = () => {
 				</li>
 				<li>
 					<NavLink to="/nested">Nested</NavLink>
+				</li>
+				<li>
+					<NavLink to="/api">API</NavLink>
 				</li>
 			</ul>
 		</div>
